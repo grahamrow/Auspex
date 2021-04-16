@@ -59,6 +59,31 @@ class SingleShotMeasurement(Filter):
         self.pdf_data_queue = Queue() #Output queue
         self.fidelity       = self.source
 
+    def get_fidelity_offline(self, ground_data, excited_data, plot=True):
+        self.excited_data = excited_data
+        self.ground_data = ground_data
+        self.compute_filter()
+
+        if plot:
+            import matplotlib.pyplot as plt
+            fig, (ax1, ax2) = plt.subplots(2, dpi=100)
+            pdf = self.pdf_data
+            ax1.set_title("I")
+            ax1.plot(pdf['I Bins'], pdf['Ground I PDF'])
+            ax1.plot(pdf['I Bins'], pdf['Ground I Gaussian PDF'])
+            ax1.plot(pdf['I Bins'], pdf['Excited I PDF'])
+            ax1.plot(pdf['I Bins'], pdf['Excited I Gaussian PDF'])
+
+            ax2.set_title("Q")
+            ax2.plot(pdf['Q Bins'], pdf['Ground Q PDF'])
+            ax2.plot(pdf['Q Bins'], pdf['Ground Q Gaussian PDF'])
+            ax2.plot(pdf['Q Bins'], pdf['Excited Q PDF'])
+            ax2.plot(pdf['Q Bins'], pdf['Excited Q Gaussian PDF'])
+
+            plt.tight_layout()
+
+        return self.fidelity_result
+
     def update_descriptors(self):
 
         logger.debug("Updating Plotter %s descriptors based on input descriptor %s", self.filter_name, self.sink.descriptor)
