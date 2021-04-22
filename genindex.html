@@ -3,9 +3,9 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>Index &mdash; auspex 2019.2 documentation</title>
   
@@ -16,7 +16,10 @@
 
   
   
+
   
+  
+
   
 
   
@@ -29,11 +32,8 @@
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
-        <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+        <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -53,7 +53,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home" alt="Documentation Home"> auspex
+            <a href="index.html" class="icon icon-home"> auspex
           
 
           
@@ -135,6 +135,8 @@
 
 
 
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
 
   <ul class="wy-breadcrumbs">
@@ -146,7 +148,7 @@
     
       <li class="wy-breadcrumbs-aside">
         
-            
+          
         
       </li>
     
@@ -246,8 +248,6 @@
 </li>
       <li><a href="api/auspex.html#auspex.stream.DataStreamDescriptor.add_param">add_param() (auspex.stream.DataStreamDescriptor method)</a>
 </li>
-      <li><a href="api/auspex.html#auspex.stream.DataAxis.add_points">add_points() (auspex.stream.DataAxis method)</a>
-</li>
       <li><a href="api/auspex.html#auspex.parameter.Parameter.add_post_push_hook">add_post_push_hook() (auspex.parameter.Parameter method)</a>
 </li>
       <li><a href="api/auspex.html#auspex.parameter.Parameter.add_pre_push_hook">add_pre_push_hook() (auspex.parameter.Parameter method)</a>
@@ -261,6 +261,8 @@
       <li><a href="api/auspex.html#auspex.experiment.Experiment.add_sweep">add_sweep() (auspex.experiment.Experiment method)</a>
 
       <ul>
+        <li><a href="api/auspex.qubit.html#auspex.qubit.qubit_exp.QubitExperiment.add_sweep">(auspex.qubit.qubit_exp.QubitExperiment method)</a>
+</li>
         <li><a href="api/auspex.html#auspex.sweep.Sweeper.add_sweep">(auspex.sweep.Sweeper method)</a>
 </li>
       </ul></li>
@@ -1050,12 +1052,6 @@
 </li>
       <li><a href="api/auspex.instruments.html#auspex.instruments.lakeshore.LakeShore370.check_channel">check_channel() (auspex.instruments.lakeshore.LakeShore370 method)</a>
 </li>
-      <li><a href="api/auspex.html#auspex.stream.SweepAxis.check_for_refinement">check_for_refinement() (auspex.stream.SweepAxis method)</a>
-
-      <ul>
-        <li><a href="api/auspex.html#auspex.sweep.Sweeper.check_for_refinement">(auspex.sweep.Sweeper method)</a>
-</li>
-      </ul></li>
       <li><a href="api/auspex.instruments.html#auspex.instruments.lakeshore.LakeShore335.check_hconf_msg">check_hconf_msg() (auspex.instruments.lakeshore.LakeShore335 method)</a>
 </li>
       <li><a href="api/auspex.instruments.html#auspex.instruments.lakeshore.LakeShore335.check_htr_msg">check_htr_msg() (auspex.instruments.lakeshore.LakeShore335 method)</a>
@@ -1114,10 +1110,10 @@
 </li>
       <li><a href="api/auspex.qubit.html#auspex.qubit.pipeline.PipelineManager.commit">commit() (auspex.qubit.pipeline.PipelineManager method)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api/auspex.instruments.html#auspex.instruments.keithley.Keithley2400.compliance">compliance() (auspex.instruments.keithley.Keithley2400 property)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api/auspex.filters.html#auspex.filters.singleshot.SingleShotMeasurement.compute_filter">compute_filter() (auspex.filters.singleshot.SingleShotMeasurement method)</a>
 </li>
       <li><a href="api/auspex.instruments.html#auspex.instruments.keithley.Keithley2400.concurrent">concurrent() (auspex.instruments.keithley.Keithley2400 property)</a>
@@ -2696,12 +2692,6 @@
 </li>
       <li><a href="api/auspex.html#auspex.parameter.IntParameter">IntParameter (class in auspex.parameter)</a>
 </li>
-      <li><a href="api/auspex.html#auspex.stream.DataStreamDescriptor.is_adaptive">is_adaptive() (auspex.stream.DataStreamDescriptor method)</a>
-
-      <ul>
-        <li><a href="api/auspex.html#auspex.sweep.Sweeper.is_adaptive">(auspex.sweep.Sweeper method)</a>
-</li>
-      </ul></li>
       <li><a href="api/auspex.qubit.html#auspex.qubit.qubit_exp.QubitExperiment.is_in_measured_qubit_names">is_in_measured_qubit_names() (auspex.qubit.qubit_exp.QubitExperiment method)</a>
 </li>
       <li><a href="api/auspex.html#auspex.config.isnotebook">isnotebook() (in module auspex.config)</a>
@@ -2857,6 +2847,8 @@
 </li>
       </ul></li>
       <li><a href="api/auspex.filters.html#auspex.filters.plot.MeshPlotter">MeshPlotter (class in auspex.filters.plot)</a>
+</li>
+      <li><a href="api/auspex.html#auspex.data_format.AuspexDataContainer.metadata">metadata() (auspex.data_format.AuspexDataContainer property)</a>
 </li>
       <li><a href="api/auspex.html#auspex.experiment.MetaExperiment">MetaExperiment (class in auspex.experiment)</a>
 </li>
@@ -4829,8 +4821,6 @@
         <li><a href="api/auspex.html#auspex.stream.DataStreamDescriptor.tuple_width">(auspex.stream.DataStreamDescriptor method)</a>
 </li>
       </ul></li>
-      <li><a href="api/auspex.html#auspex.stream.DataStreamDescriptor.tuples">tuples() (auspex.stream.DataStreamDescriptor method)</a>
-</li>
   </ul></td>
 </tr></table>
 
@@ -5140,28 +5130,25 @@
            
           </div>
           <footer>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        
-        &copy; Copyright 2019, Auspex Developers
+        &#169; Copyright 2019, Auspex Developers.
 
     </p>
   </div>
     
     
     
-    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     
-    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     
     provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
-
         </div>
       </div>
 
